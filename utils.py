@@ -166,8 +166,8 @@ def classify_occurrences(df):
 
 def dataset_conversion(df):
     df['Dispatch Date / Time'] = pd.to_datetime(df['Dispatch Date / Time'])
-    df['Start Date / Time'] = pd.to_datetime(df['Dispatch Date / Time'])
-    df['End Date / Time'] = pd.to_datetime(df['Dispatch Date / Time'])
+    df['Start Date / Time'] = pd.to_datetime(df['Start Date / Time'])
+    df['End Date / Time'] = pd.to_datetime(df['End Date / Time'])
     
     df['Zip Code'] = pd.to_numeric(df['Zip Code'].fillna(-1), downcast='integer')
     df['PRA'] = pd.to_numeric(df['PRA'].fillna(-1), downcast='integer')    
