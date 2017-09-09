@@ -10,7 +10,7 @@ Os objetivos do projeto são analisar os dados de ocorrências policiais e extra
 
 Para realizar os objetivos as ocorrências serão categorizadas pelo código de chamada utilizado na comunição via rádio. Serão realizados análises relacionadas a localização e tempo. Para análise de tempo será criado um perfil de ocorrências relacionado ao horário do dias e outro perfil de ocorrências relacionado aos dias da semana. Para localização foram criados perfis por cidade e por distrito policial.
 
-##Divisão dos notebooks
+## Divisão dos notebooks
 
 Foram criados 3 notebooks e um script python. O script python faz algumas alterações no dataset original; são elas: a categorização dos crimes de acordo com o regimento policial do condado, a criação da coluna categoria informando a categoria a qual o crime pertence e a conversão das datas das ocorrências para o tipo DateTime. Este script é importado nos demais notebooks. O primeiro notebook é uma Descrição do dataset (Dataset description), contendo a descrição e a explicação de todas as colunas, bem como as respostas as questões iniciais levantadas pela atividade. O segundo notebook (Time Analysis) faz uma análise temporal das ocorrências, as análises contidas neste notebook são: horária, semanal, por período do dia (dia e noite) e a análise do intervalo entre as ocorrências da mesma categoria. O terceiro notebook (Location Analysis) compreende as análises relacionadas a localidade, nele são calculados os índices de crimes por cidade e por distrito policial, são também levantados os 10 principais tipos de ocorrência em cada localidade. 
 
