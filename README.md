@@ -1,30 +1,29 @@
 # Minority-Report
 
-## Grupo
+## Team
 Rute Souza de Abreu
 Yuri Thomas Pinheiro Nunes
 
-## Objetivos
+## Objectives
 
-Os objetivos do projeto são analisar os dados de ocorrências policiais e extrair informações que possam ajudar a predizer e responder de maneira eficiente. As ocorrencias foram registradas no banco de dados da policia do condado de Montgomery no estado de Maryland, Estados Unidos. Os dados são referentes aos últimos seis meses do ano de 2013. Os dados que podem ferir a privacidade de algum individuo foram removidos e informações como endereço foram arrendondados para um raio de 100 casas.
+The objectives of the project are to analyze police incident data and extract information that can help predict and respond efficiently. The occurrences were recorded in the Montgomery County Police Database in the state of Maryland, United States. Data refer to the last six months of 2013. Data that may harm an individual's privacy has been removed and information such as address has been rounded up to 100 homes.
 
-Para realizar os objetivos as ocorrências serão categorizadas pelo código de chamada utilizado na comunição via rádio. Serão realizados análises relacionadas a localização e tempo. Para análise de tempo será criado um perfil de ocorrências relacionado ao horário do dias e outro perfil de ocorrências relacionado aos dias da semana. Para localização foram criados perfis por cidade e por distrito policial.
+To accomplish the objectives, the occurrences will be categorized by the calling code used in radio communication. Analyzes related to location and time will be performed. For time analysis a time profile related to the time of day will be created and another event profile related to the days of the week. For location profiles were created by city and by police district.
 
-## Divisão dos notebooks
+## Division of notebooks
 
-Foram criados 3 notebooks e um script python. O script python faz algumas alterações no dataset original; são elas: a categorização dos crimes de acordo com o regimento policial do condado, a criação da coluna categoria informando a categoria a qual o crime pertence e a conversão das datas das ocorrências para o tipo DateTime. Este script é importado nos demais notebooks. O primeiro notebook é uma Descrição do dataset (Dataset description), contendo a descrição e a explicação de todas as colunas, bem como as respostas as questões iniciais levantadas pela atividade. O segundo notebook (Time Analysis) faz uma análise temporal das ocorrências, as análises contidas neste notebook são: horária, semanal, por período do dia (dia e noite) e a análise do intervalo entre as ocorrências da mesma categoria. O terceiro notebook (Location Analysis) compreende as análises relacionadas a localidade, nele são calculados os índices de crimes por cidade e por distrito policial, são também levantados os 10 principais tipos de ocorrência em cada localidade. 
+3 notebooks and a python script were created. The python script makes some changes to the original dataset; they are: the categorization of crimes according to the county police regiment, the creation of the category column reporting the category to which the crime belongs, and the conversion of the date of the occurrences to DateTime type. This script is imported to other notebooks. The first notebook is a Dataset Description, containing the description and explanation of all columns, as well as the answers to the initial questions raised by the activity. The second notebook (Time Analysis) makes a temporal analysis of occurrences, the analyzes contained in this notebook are: hourly, weekly, by period of the day (day and night) and the analysis of the interval between occurrences of the same category. The third notebook (Location Analysis) comprises location-related analyzes, where crime rates by city and police district are calculated, and the top 10 types of occurrences in each location are also surveyed.
 
-## Conclusões
+## Conclusions
 
-No perfil semanal foi possível perceber questões de sazonalidade como o maior número de ocorrências de roubo e ocorrências relacionadas a drogas durante a semana. Em contraste, existe um maior número de ocorrências de suicidio nos fins de semana. Essas informações podem ajudar no planejamento para garantir um maior nível de patrulhamento durante a semana e manejar funcionários para auxílio psicológico em caso de pessoas com maior tendência para cometer suicidio.
+In the weekly profile it was possible to perceive seasonality issues as the highest number of theft occurrences and drug related occurrences during the week. In contrast, there are a higher number of suicide occurrences on weekends. This information can help in planning to ensure a higher level of patrolling during the week and to manage staff for psychological help for people more likely to commit suicide.
 
-No perfil horário pode-se notar um claramente que as ocorrências relacionadas a drogas ocorrerem no período noturno enquanto os roubos durante o dia.
+In the hourly profile one can clearly note that drug-related occurrences occur at night while thefts during the day.
 
-Em relação as análises que relacionam os crimes com as localidades, isto é, crimes por cidade e crimes por distrito policial, pudemos perceber que o crime de 'Lacerny', que diz respeito a roubo/furto, foi o crime com maior porcentagem de ocorrência em 20 das 32 cidades e em 6 dos 8 distritos.
+Regarding the analyzes that relate the crimes with the localities, that is, crimes by city and crimes by police district, we could realize that the crime of 'Lacerny', which concerns theft / theft, was the crime with the highest percentage of occurrence. in 20 of the 32 cities and in 6 of the 8 districts.
 
 
-
-## Requisitos
+## Requirements
 
 - NumPy
 - Pandas
